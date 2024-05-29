@@ -1,1 +1,2 @@
-alert('welcome to Israel')
+alert('Welcome to Israel');
+console.log('You can do it')
