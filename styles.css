@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     padding: 0%;
     margin: 0%;
+    font-family: 'Baloo 2';
     box-sizing: border-box;
     position: relative;
 }
@@ -14,7 +15,7 @@ body {
 section {
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 2px blue dotted;
+    /* border-bottom: 2px blue dotted; */
 }
 
 
@@ -49,12 +50,18 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        background-image: url("2150923223.jpg");
+        background-size: cover;
+        background-position: -100px;
+        box-shadow: 0px 8px 4px grey;
     }
 
     #photo-background-container h1 {
         color: white;
-        font-size: 30px;
+        font-size: 40px;
+        font-weight: bolder;
         text-align: center;
+        margin-bottom: 0px;
     }
 
 
