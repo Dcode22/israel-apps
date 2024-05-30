@@ -1,5 +1,6 @@
 :root {
-    --main-header-color: #58009D;
+    --main-color-purple: #58009D;
+    --main-color-pink: #B20071;
 }
 
 body {
@@ -35,10 +36,11 @@ section {
         background-color: rgba(0, 0, 0, 0.1);
         border-bottom-left-radius: 10px;
         border: 0px;
+        z-index: 2;
     }
 
     .menu-icon {
-        font-size: 40px;
+        font-size: 50px;
     }
 
 
@@ -50,10 +52,11 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-image: url("2150923223.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("2150923223.jpg");
+        filter: brightness(1.5);
         background-size: cover;
         background-position: -100px;
-        box-shadow: 0px 8px 4px grey;
+        box-shadow: 0px 4px 6px grey;
     }
 
     #photo-background-container h1 {
