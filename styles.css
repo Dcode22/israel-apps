@@ -1,5 +1,63 @@
+:root {
+    --main-header-color: #58009D;
+}
+
 body {
     width: 100vw;
-    height: 100vh;
-    background-color: blue;
+    min-height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    position: relative;
 }
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px blue dotted;
+}
+
+
+@media (width < 900px) {
+    #menu-button {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 90px;
+        height: 73px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        color: var(--main-header-color);
+        background-color: rgba(0, 0, 0, 0.1);
+        border-bottom-left-radius: 10px;
+        border: 0px;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+    }
+
+
+
+    #photo-background-container{
+        /* background-image: url(); */
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #photo-background-container h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+}
+
+    
