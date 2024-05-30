@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Baloo 2';
 }
 
 body {
@@ -25,8 +26,63 @@ a {
 
 section {
   width: 100%;
-  box-sizing: border-box;
-  border-bottom: 2px blue dotted;
+}
+#welcome-section {
+  text-align: center;
+  #photo-background-container{
+      /* background-image: url(); */
+      height: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("2150923223.jpg");
+      filter: brightness(1.5);
+      background-size: cover;
+      background-position: -100px;
+      box-shadow: 0px 4px 6px grey;
+      h1 {
+          color: white;
+          text-shadow: 2px 2px 5px black;
+          font-size: 40px;
+          font-weight: bolder;
+          margin-bottom: 0px;
+      }
+  }
+
+  #intro-header {
+      color: var(--main-color-purple);
+      font-size: 32px;
+      margin-top: 60px;
+      margin-bottom: 10px;
+      #introducing-text{
+          font-weight: 200;
+      }
+  }
+
+  #tag-line-gradient-container{
+      width: 100%;
+      box-sizing: border-box;
+      height: 150px;
+      color: white;
+      display: flex;
+      padding: 0px 16px;
+      align-items: center;
+      background: linear-gradient(to right, var(--main-color-purple), var(--main-color-pink));
+      h3 {
+          font-weight: 200;
+          font-size: 25px;
+      }
+  }
+
+  p {
+      margin-top: 48px;
+      line-height: 32px;
+      padding: 0px 32px;
+      font-size: 22px;
+      font-weight: 100;
+  }
+
 }
 
 #apps-cards-section {
@@ -45,7 +101,6 @@ section {
     width: 20rem;
     display: flex;
     flex-direction: column;
-
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -62,7 +117,7 @@ section {
         var(--main-clr-purple) 0%,
         rgba(178, 0, 113, 1) 100%
       );
-
+      
       img {
         width: 8rem;
         border-radius: 100%;
@@ -137,7 +192,7 @@ section {
   }
 
   .menu-icon {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #photo-background-container {
