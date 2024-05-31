@@ -3,6 +3,10 @@
     --main-color-pink: #B20071;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -22,8 +26,238 @@ section {
     /* border-bottom: 2px blue dotted; */
 }
 
+#swipe-like-a-sabra {
+    color: var(--main-color-purple);
+}
+#in-minutes {
+    color: var(--main-color-pink);
+}
+
+@media (width >= 900px){
+    #menu-button, #menu-container {
+        display: none;
+    }
+    #desktop-header {
+        width: 100vw;
+        height: 60px;
+        z-index: 3;
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        box-shadow: 0px 3px 5px grey;
+        #header-inner-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1360px;
+            margin: auto;
+        }
+        #star-of-david-pic {
+            height: 50px;
+            width: 50px;
+            margin-left: 48px;
+        }
+        #nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-right: 64px;
+            .nav-bar-link {
+                font-size: 24px;
+                color: var(--main-color-purple);
+            }
+        }
+    }
+
+
+    #welcome-section {
+        text-align: center;
+        max-width: 1360px;
+        margin: auto;
+        #photo-background-container{
+            height: 70vh;
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+            z-index: -3;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url("assets/2150923223.jpg");
+            filter: brightness(1.5);
+            background-size: cover;
+            box-shadow: 0px 4px 6px grey;
+            h1 {
+                color: white;
+                text-shadow: 2px 2px 5px black;
+                font-size: 100px;
+                font-weight: bolder;
+                margin-bottom: 0px;
+            }
+        }
+
+        #intro-header {
+            color: var(--main-color-purple);
+            font-size: 48px;
+            height: calc(30vh - 60px);
+            padding-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            #introducing-text{
+                font-weight: 200;
+            }
+        }
+
+        #tag-line-gradient-container{
+            width: 100%;
+            box-sizing: border-box;
+            height: 150px;
+            color: white;
+            text-align: center;
+            display: flex;
+            padding: 0px 16px;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, var(--main-color-purple), var(--main-color-pink));
+            h3 {
+                font-weight: 200;
+                font-size: 36px;
+            }
+        }
+
+        p {
+            margin: 64px 0px;
+            line-height: 48px;
+            padding: 0px 64px;
+            font-size: 28px;
+            font-weight: 100;
+            b {
+                font-size: 36px;
+            }
+        }
+
+    }
+
+    .section-divider-hr {
+        width: 32%;
+        border: none;
+        outline: none;
+        height: 3px;
+        background-color: var(--main-color-purple);
+        margin: auto;
+    }
+
+    #about-us-section {
+        text-align: center;
+        max-width: 1360px;
+        padding-top: 60px;
+        margin: auto;
+        margin-bottom: 64px;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--main-color-purple);
+            margin: 64px 0px;
+        }
+
+        #profile-pictures-names-div{
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+            .profile-pic-name-container {
+                .image-gradient-border {
+                    width: 316px;
+                    height: 316px;
+                    border-radius: 50%;
+                    padding: 8px;
+                    background: linear-gradient(-45deg, var(--main-color-pink), var(--main-color-purple));
+                    .profile-pic {
+                        border-radius: 50%;
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+                h4 {
+                    text-align: center;
+                    color: var(--main-color-purple);
+                    margin: auto;
+                    margin-top: 32px;
+                    line-height: 40px;
+                    font-size: 32px;
+                }
+            }
+        }
+
+        #bio-text {
+            font-size: 28px;
+            line-height: 48px;
+            padding: 64px;
+            
+        }
+    }
+
+
+    #contact-us-section {
+        text-align: center;
+        padding: 0px 32px;
+        max-width: 1360px;
+        margin: auto;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--main-color-purple);
+            margin: 64px 0px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            max-width: 700px;
+            margin: auto;
+            .form-input {
+                background-color: #f7f7f7;
+                border: none;
+                border-bottom: 2px solid var(--main-color-purple);
+                padding: 16px;
+                font-size: 24px;
+            }
+            .form-input:focus {
+                outline: none;
+            }
+            textarea {
+                resize: vertical;
+            }
+            button {
+                background-color: var(--main-color-purple);
+                border-radius: 10px;
+                width: 40%;
+                height: 50px;
+                margin: auto;
+                color: white;
+                border: none;
+                font-size: 32px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+        }
+
+    }
+
+    #copyright {
+        text-align: center;
+        margin: 16px;
+        margin-top: 60px;
+    }
+}
+
 
 @media (width < 900px) {
+    #desktop-header {
+        display: none;
+    }
     #menu-button {
         position: fixed;
         top: 0px;
