@@ -58,6 +58,26 @@ const appDownloadUrls = {
         ios: "https://apps.apple.com/us/app/telegram-messenger/id686449807", 
         android: "https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en",
     },
+    tzofar: {
+        ios: "https://apps.apple.com/us/app/tzofar-red-alert/id1480129320", 
+        android: "https://play.google.com/store/apps/details?id=com.redalert.tzevaadom",
+    },
+    redAlert: {
+        ios: "https://apps.apple.com/us/app/red-alert-israel/id873642097", 
+        android: "https://play.google.com/store/apps/details?id=com.red.alert",
+    },
+    linkedIn: {
+        ios: "https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040", 
+        android: "https://play.google.com/store/apps/details?id=com.linkedin.android",
+    },
+    indeed: {
+        ios: "https://apps.apple.com/us/app/indeed-job-search/id309735670", 
+        android: "https://play.google.com/store/apps/details?id=com.indeed.android.jobsearch",
+    },
+    glassdoor: {
+        ios: "https://apps.apple.com/us/app/glassdoor-jobs-community/id589698942", 
+        android: "https://play.google.com/store/apps/details?id=com.glassdoor.app",
+    },
 }
 
 function clickAppDownload(appName){
