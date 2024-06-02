@@ -3,36 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="cards-section.css">
+    <link rel="stylesheet" href="cards-section.css" />
+    <link rel="icon" href="assets/Star-of-David.png" />
     <title>IsraelApps</title>
   </head>
+
   <body>
     <header id="desktop-header">
-      <div id="header-inner-container">
-        <img id="star-of-david-pic" src="assets/star.png" alt="">
-        <div id="nav-links">
-          <div><a class="nav-bar-link" href="#">Home</a></div>
-          <div><a class="nav-bar-link" href="#app-cards-main-section">Apps</a></div>
-          <div><a class="nav-bar-link" href="#about-us-section">About</a></div>
-          <div><a class="nav-bar-link" href="#contact-us-section">Contact</a></div>
+      <a href="#desktop-header" id="star-of-david-pic"
+        ><img src="assets/Star-of-David.png" alt="Star of David icon"
+      /></a>
+
+      <nav id="nav-links">
+        <div>
+          <a href="#">Home</a>
         </div>
-      </div>
+
+        <div>
+          <a href="#app-cards-main-section">Apps</a>
+        </div>
+
+        <div>
+          <a href="#about-us-section">About</a>
+        </div>
+
+        <div>
+          <a href="#contact-us-section">Contact</a>
+        </div>
+      </nav>
     </header>
+
     <button onclick="openMenu()" id="menu-button">
       <div>
         <i class="material-icons menu-icon">menu</i>
       </div>
     </button>
+
     <menu id="menu-container">
       <i class="material-icons close-icon" onclick="closeMenu()">close</i>
       <li><a href="#" onclick="closeMenu()">Home</a></li>
       <li><a href="#app-cards-main-section" onclick="closeMenu()">Apps</a></li>
-      <li> <a href="#about-us-section" onclick="closeMenu()">About</a></li>
+      <li><a href="#about-us-section" onclick="closeMenu()">About</a></li>
       <li><a href="#contact-us-section" onclick="closeMenu()">Contact</a></li>
     </menu>
 
@@ -40,460 +62,657 @@
       <div id="photo-background-container">
         <h1>Welcome to Israel!</h1>
       </div>
+
       <div id="intro-header">
-        <h1><span id="introducing-text">Introducing</span> <b>IsraelApps</b></h1>
+        <h1>
+          <span id="introducing-text">Introducing</span> <b>IsraelApps</b>
+        </h1>
       </div>
+
       <div id="tag-line-gradient-container">
         <h3>Your guide to getting digitally integrated in Israel</h3>
       </div>
 
       <p>
-        A new country comes with a lot of unfamiliarity, including on your phone.
-        This site is here to help guide you through installing and configuring the essential apps that Israelis use every day so you can 
-        <br> 
-        <b id="swipe-like-a-sabra">swipe like a Sabra</b> <b id="in-minutes">in minutes</b>. 
-        <br>
-        <br>
-        We've curated the most essential apps for navigation, language learning, job searching, and more, and included links to video tutorials to guide you through each application's features, so you can effortlessly make the most of these digital tools. 
-        <br>
-        <br>
+        A new country comes with a lot of unfamiliarity, including on your
+        phone. This site is here to help guide you through installing and
+        configuring the essential apps that Israelis use every day so you can
+
+        <br />
+
+        <b id="swipe-like-a-sabra">swipe like a Sabra</b>
+        <b id="in-minutes">in minutes</b>.
+
+        <br />
+        <br />
+
+        We've curated the most essential apps for navigation, language learning,
+        job searching, and more, and included links to video tutorials to guide
+        you through each application's features, so you can effortlessly make
+        the most of these digital tools.
+
+        <br />
+        <br />
+
         Welcome to a smoother transition and an easier life with IsraelApps.
       </p>
     </section>
-    <hr class="section-divider-hr">
-    <section id="app-cards-main-section">
-      <h1>Here are the apps you’ll need</h1>
 
-      <section id="category-buttons-container">
-        <a href="">Transportation</a>
-        <a href="">Communication</a>
-        <a href="">Safety</a>
-        <a href="">Job Searching</a>
-        <a href="">Banking</a>
-        <a href="">Government</a>
+    <hr class="section-divider-hr" />
+    <main>
+      <section id="app-cards-main-section">
+        <h1>Here are the apps you’ll need</h1>
+
+        <section id="category-buttons-container">
+          <a href="#transportation-target">Transportation</a>
+          <a href="#communication-target">Communication</a>
+          <a href="#safety-target">Safety</a>
+          <a href="#job-searching-target">Job Searching</a>
+          <a href="#banking-target">Banking</a>
+        </section>
+
+        <section id="app-cards-section">
+          <section class="cards-container">
+            <div id="transportation-target" class="offset-anchor"></div>
+            <h2>Transportation</h2>
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/Moovit-app-logo.png" alt="Moovit App Logo" />
+                </div>
+                <h3>Moovit</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Moovit is a public transportation app that provides real-time
+                  transit information, route planning, and navigation for buses,
+                  trains, and other transit modes. It aims to simplify urban
+                  mobility by offering live updates, schedules, and alerts for
+                  efficient commuting.
+                </p>
+
+                <button>&darr;</button>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=WzlAwuZzEps"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('moovit')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/wayz-app-icon-rankmyapp.jpg"
+                    alt="Waze App Logo"
+                  />
+                </div>
+                <h3>Waze</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Waze is a GPS navigation app that provides real-time traffic
+                  updates and turn-by-turn directions using crowd-sourced data
+                  from its users. It helps drivers avoid traffic, find the
+                  fastest routes, and receive alerts about accidents, hazards,
+                  and police traps.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=0th8s9rl2R8"
+                    >How to use</a
+                  >
+                </button>
+                <button class="download-btn" onclick="clickAppDownload('waze')">
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/gett-icon-pic.jpg" alt="Gett App Logo" />
+                </div>
+                <h3>Gett</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Gett is a ride-hailing app that connects users with
+                  professional drivers for on-demand transportation and delivery
+                  services. It offers reliable rides and efficient logistics
+                  solutions, focusing on business clients and corporate
+                  accounts.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.gett.com/uk/">How to use</a>
+                </button>
+                <button class="download-btn" onclick="clickAppDownload('gett')">
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/google-maps.png"
+                    alt="Google Maps App Logo"
+                  />
+                </div>
+                <h3>Google Maps</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Google Maps is a web mapping service that offers detailed
+                  maps, real-time traffic conditions, and route planning for
+                  traveling by foot, car, bicycle, or public transportation. It
+                  also provides information on nearby businesses and points of
+                  interest.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=3yR1M2mEhzE"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('googleMaps')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+          </section>
+
+          <!-- ======================= -->
+
+          <section id="communication-apps" class="cards-container">
+            <div id="communication-target" class="offset-anchor"></div>
+            <h2>Communication</h2>
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/whatsapp-icon.png" alt="WhatsApp App Logo" />
+                </div>
+                <h3>WhatsApp</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  WhatsApp is a messaging app that allows users to send text
+                  messages, make voice and video calls, and share media and
+                  documents. It offers end-to-end encryption for secure
+                  communication.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=sghayXZ_RK0"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('whatsapp')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/google-translate-icon.png"
+                    alt="Google Translate App Logo"
+                  />
+                </div>
+                <h3>Google Translate</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Google Translate is a language translation service that
+                  translates text, speech, images, and websites between numerous
+                  languages. It provides instant translations and features such
+                  as pronunciation guides and real-time voice translation.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=W0JQqkKjHZw"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('googleTranslate')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/duolingo-icon.png" alt="Duolingo App Logo" />
+                </div>
+                <h3>Duolingo</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Duolingo is a language-learning app that offers interactive
+                  lessons and exercises in various languages. It uses
+                  gamification to make learning engaging and effective.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=wmdG-uZk6JY"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('duolingo')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/telegram-icon.webp"
+                    alt="Telegram App Logo"
+                  />
+                </div>
+                <h3>Telegram</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Telegram is a messaging app that provides fast and secure
+                  communication through text, voice, and video messages. It
+                  features cloud-based storage, large group chats, and strong
+                  encryption for privacy.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=FQ2rH3KrfcM"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('telegram')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+          </section>
+
+          <!-- ======================= -->
+
+          <section id="safety-apps" class="cards-container">
+            <div id="safety-target" class="offset-anchor"></div>
+            <h2>Safety</h2>
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/tzofar.png" alt="Tzofar App Logo" />
+                </div>
+                <h3>Tzofar</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Tzofar is an alert system app that provides real-time
+                  notifications about rocket attacks and other emergencies in
+                  Israel. It helps users stay informed and safe by delivering
+                  timely alerts based on their location.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.tzevaadom.co.il/en/systems/"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('tzofar')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/red-alert-icon.webp"
+                    alt="Red Alert App Logo"
+                  />
+                </div>
+                <h3>Red Alert</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Red Alert is an app that provides real-time notifications of
+                  rocket and missile attacks in Israel. It helps users stay safe
+                  by delivering instant alerts based on their location, allowing
+                  them to take immediate protective action.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://redalert.me/index_en.html">How to use</a>
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('redAlert')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+          </section>
+
+          <!-- ======================= -->
+
+          <section id="job-searching-apps" class="cards-container">
+            <div id="job-searching-target" class="offset-anchor"></div>
+            <h2>Job Searching</h2>
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/LinkedIn_logo_initials.png"
+                    alt="LinkedIn App Logo"
+                  />
+                </div>
+                <h3>LinkedIn</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  LinkedIn is a professional networking platform that connects
+                  professionals, allowing them to build and maintain
+                  professional relationships, showcase their skills and
+                  experience, and seek job opportunities. It serves as a
+                  platform for networking, recruitment, and professional
+                  development.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=_kwqqtpprrE"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('linkedIn')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/indeed-icon.png" alt="Indeed App Logo" />
+                </div>
+                <h3>Indeed</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Indeed is an online job search platform that connects job
+                  seekers with employers by aggregating job listings from
+                  various sources, such as company websites, job boards, and
+                  staffing firms. It offers tools for job seekers to search for
+                  positions, upload resumes, and receive alerts about relevant
+                  job openings.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=1qzEIU8A-6A"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('indeed')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+
+            <!-- -------- -->
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img
+                    src="assets/glassdoor-icon.png"
+                    alt="Glassdoor App Logo"
+                  />
+                </div>
+                <h3>Glassdoor</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Glassdoor is a platform that provides insights into companies,
+                  including employee reviews, salary information, and interview
+                  experiences. It offers job listings, company profiles, and
+                  tools for job seekers to research companies and find
+                  employment opportunities.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.youtube.com/watch?v=thQdDBPvzFQ"
+                    >How to use</a
+                  >
+                </button>
+                <button
+                  class="download-btn"
+                  onclick="clickAppDownload('glassdoor')"
+                >
+                  Download
+                </button>
+              </section>
+            </div>
+          </section>
+
+          <!-- ======================= -->
+
+          <section id="banking-apps" class="cards-container">
+            <div id="banking-target" class="offset-anchor"></div>
+            <h2>Banking</h2>
+
+            <div class="card">
+              <section class="card-header">
+                <div>
+                  <img src="assets/bit-icon.png" alt="Bit App Logo" />
+                </div>
+                <h3>Bit</h3>
+              </section>
+
+              <section class="card-content">
+                <p>
+                  Experience seamless financial transactions with Bit: Transfer
+                  funds, make online purchases, and settle bills hassle-free.
+                  Join our extensive customer base and make Bit your preferred
+                  payment method today.
+                  <button>&darr;</button>
+                </p>
+              </section>
+
+              <section class="card-links">
+                <button>
+                  <a href="https://www.bitpay.co.il/he">How to use</a>
+                </button>
+                <button class="download-btn" onclick="clickAppDownload('bit')">
+                  Download
+                </button>
+              </section>
+            </div>
+          </section>
+        </section>
       </section>
 
-      <section id="app-cards-section">
-        <section class="transportation-app-cards-container cards-container">
-          <h2>Transportation</h2>
-          <hr />
+      <hr class="section-divider-hr" />
 
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/Moovit-app-logo.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Moovit</h3>
-            </section>
+      <section id="about-us-section">
+        <h1 id="about-us-header">About Us</h1>
 
-            <section class="card-content">
-              <p>
-                Moovit is a public transportation app that provides real-time
-                transit information, route planning, and navigation for buses,
-                trains, and other transit modes. It aims to simplify urban
-                mobility by offering live updates, schedules, and alerts for
-                efficient commuting.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
+        <div id="profile-pictures-names-div">
+          <div class="profile-pic-name-container">
+            <div class="image-gradient-border">
+              <img
+                class="profile-pic"
+                id="dovid-pic"
+                src="assets/dovid-levine.jpeg"
+                alt="Dovid Levine"
+              />
+            </div>
+            <h4>Dovid Levine</h4>
           </div>
 
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img
-                  src="assets/ways-app-icon-rankmyapp.jpg"
-                  alt="Moovit App Logo"
-                />
-              </div>
-              <h3>Waze</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Waze is a GPS navigation app that provides real-time traffic
-                updates and turn-by-turn directions using crowd-sourced data
-                from its users. It helps drivers avoid traffic, find the fastest
-                routes, and receive alerts about accidents, hazards, and police
-                traps.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
+          <div class="profile-pic-name-container">
+            <div class="image-gradient-border">
+              <img
+                class="profile-pic"
+                id="yehonatan-pic"
+                src="assets/yehonatan-yomtov.jpeg"
+                alt="Yehonatan Yomtov"
+              />
+            </div>
+            <h4>Yehonatan Yomtov</h4>
           </div>
+        </div>
 
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/gett-icon-pic.jpg" alt="Moovit App Logo" />
-              </div>
-              <h3>Gett</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Gett is a ride-hailing app that connects users with professional
-                drivers for on-demand transportation and delivery services. It
-                offers reliable rides and efficient logistics solutions,
-                focusing on business clients and corporate accounts.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/google-maps.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Google Maps</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Google Maps is a web mapping service that offers detailed maps,
-                real-time traffic conditions, and route planning for traveling
-                by foot, car, bicycle, or public transportation. It also
-                provides information on nearby businesses and points of
-                interest.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-        </section>
-
-        <!-- ======================= -->
-
-        <section class="communication-card-apps-container cards-container">
-          <h2>Communication</h2>
-          <hr />
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/whatsapp-icon.png" alt="Moovit App Logo" />
-              </div>
-              <h3>WhatsApp</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                WhatsApp is a messaging app that allows users to send text
-                messages, make voice and video calls, and share media and
-                documents. It offers end-to-end encryption for secure
-                communication.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img
-                  src="assets/google-translate-icon.png"
-                  alt="Moovit App Logo"
-                />
-              </div>
-              <h3>Google Translate</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Google Translate is a language translation service that
-                translates text, speech, images, and websites between numerous
-                languages. It provides instant translations and features such as
-                pronunciation guides and real-time voice translation.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/duolingo-icon.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Duolingo</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Duolingo is a language-learning app that offers interactive
-                lessons and exercises in various languages. It uses gamification
-                to make learning engaging and effective.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/telegram-icon.webp" alt="Moovit App Logo" />
-              </div>
-              <h3>Telegram</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Telegram is a messaging app that provides fast and secure
-                communication through text, voice, and video messages. It
-                features cloud-based storage, large group chats, and strong
-                encryption for privacy.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-        </section>
-
-        <!-- ======================= -->
-
-        <section class="safety-card-apps-container cards-container">
-          <h2>Safety</h2>
-          <hr />
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/tzofar.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Tzofar</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Tzofar is an alert system app that provides real-time
-                notifications about rocket attacks and other emergencies in
-                Israel. It helps users stay informed and safe by delivering
-                timely alerts based on their location.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/red-alert-icon.webp" alt="Moovit App Logo" />
-              </div>
-              <h3>Red Alert</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Red Alert is an app that provides real-time notifications of
-                rocket and missile attacks in Israel. It helps users stay safe
-                by delivering instant alerts based on their location, allowing
-                them to take immediate protective action.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-        </section>
-
-        <!-- ======================= -->
-
-        <section class="job-searching-card-apps-container cards-container">
-          <h2>Job Searching</h2>
-          <hr />
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img
-                  src="assets/LinkedIn_logo_initials.png"
-                  alt="Moovit App Logo"
-                />
-              </div>
-              <h3>LinkedIn</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                LinkedIn is a professional networking platform that connects
-                professionals, allowing them to build and maintain professional
-                relationships, showcase their skills and experience, and seek
-                job opportunities. It serves as a platform for networking,
-                recruitment, and professional development.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/indeed-icon.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Indeed</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Indeed is an online job search platform that connects job
-                seekers with employers by aggregating job listings from various
-                sources, such as company websites, job boards, and staffing
-                firms. It offers tools for job seekers to search for positions,
-                upload resumes, and receive alerts about relevant job openings.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-
-          <!-- -------- -->
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/glassdoor-icon.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Glassdoor</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Glassdoor is a platform that provides insights into companies,
-                including employee reviews, salary information, and interview
-                experiences. It offers job listings, company profiles, and tools
-                for job seekers to research companies and find employment
-                opportunities.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-        </section>
-
-        <!-- ======================= -->
-
-        <section class="banking-card-apps-container cards-container">
-          <h2>Safety</h2>
-          <hr />
-
-          <div class="card">
-            <section class="card-header">
-              <div>
-                <img src="assets/bit-icon.png" alt="Moovit App Logo" />
-              </div>
-              <h3>Bit</h3>
-            </section>
-
-            <section class="card-content">
-              <p>
-                Experience seamless financial transactions with Bit: Transfer
-                funds, make online purchases, and settle bills hassle-free. Join
-                our extensive customer base and make Bit your preferred payment
-                method today.
-              </p>
-            </section>
-
-            <section class="card-links">
-              <button><a href="">How to use</a></button>
-              <button class="download-btn">Download</button>
-            </section>
-          </div>
-        </section>
+        <p id="bio-text">
+          We are American/Australian Olim living in Jerusalem and Bet Shemesh,
+          and improving our skills as web developers at Developers.Institute in
+          Tel Aviv. We hope this site will be a small contribution towards
+          making your transition to life in Israel easier.
+        </p>
       </section>
-    </section>
-    <hr class="section-divider-hr">
-    <section id="about-us-section">
-      <h1 id="about-us-header">About Us</h1>
 
-      <div id="profile-pictures-names-div">
-        <div class="profile-pic-name-container">
-          <div class="image-gradient-border">
-            <img class="profile-pic" id="dovid-pic" src="assets/dovid-levine.jpeg" alt="Dovid Levine">
-          </div>
-          <h4>Dovid Levine</h4>
-        </div>
-        <div class="profile-pic-name-container">
-          <div class="image-gradient-border">
-            <img class="profile-pic" id="yehonatan-pic" src="assets/yehonatan-yomtov.jpeg" alt="Yehonatan Yomtov">
-          </div>
-          <h4>Yehonatan Yomtov</h4>
-        </div>
-      </div>
-      <p id="bio-text">
-        We are American/Australian Olim living in Jerusalem and Bet Shemesh, and improving our skills as web developers at Developers.Institute in Tel Aviv. We hope this site will be a small contribution towards making your transition to life in Israel easier.
-      </p>
-    </section>
-    <hr class="section-divider-hr">
-    <section id="contact-us-section">
-      <h1>Contact Us</h1>
-      <form id="contact-form" action="#" onsubmit="sendEmail()">
-        <input id="email-input" class="form-input" type="text" placeholder="Email" required>
-        <textarea id="message-input" class="form-input" name="message" id="message-text-area" placeholder="Message" required></textarea>
-        <button id="send-button" type="submit">Send</button>
-      </form>
-    </section>
-    <p id="copyright">&copy; 2024 Dovid Levine/Yehonatan Yomtov</p>
+      <hr class="section-divider-hr" />
+
+      <section id="contact-us-section">
+        <h1>Contact Us</h1>
+
+        <form id="contact-form" action="#">
+          <input
+            id="email-input"
+            class="form-input"
+            type="text"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            id="message-input"
+            class="form-input"
+            name="message"
+            id="message-text-area"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <button id="send-button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p id="copyright">&copy; 2024 Dovid Levine/Yehonatan Yomtov</p>
+    </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
