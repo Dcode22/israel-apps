@@ -227,7 +227,9 @@ button {
     #bio-text {
       font-size: 28px;
       line-height: 48px;
-      padding: 64px;
+      padding: 8rem 0;
+      max-width: 50rem;
+      margin: 0 auto;
     }
   }
 

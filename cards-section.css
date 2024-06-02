@@ -46,7 +46,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-content: flex-start;
       padding: 10rem 0 8rem 0;
       gap: 4rem;
 
